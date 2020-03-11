@@ -1,0 +1,400 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Memzyme</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			* {
+				box-sizing: border-box;
+			}
+		
+			body {
+				font-family: Verdana, sans-serif;
+			}
+		
+			.mySlides {
+				display: none;
+			}
+			
+			/* Next & previous buttons */
+			.prev, .next {
+			cursor: pointer;
+			position: absolute;
+			top: 50%;
+			width: auto;
+			margin-top: -22px;
+			padding: 16px;
+			color: white;
+			font-weight: bold;
+			font-size: 18px;
+			transition: 0.6s ease;
+			user-select: none;
+		}
+		
+		/* Position the "next button" to the right, previous to left */
+		.next {
+			right: 0;
+			border-radius: 3px 0 0 3px;
+			background-color: rgba(147,93,140,0.8);
+		}
+		.prev {
+			left: 0;
+			border-radius: 0 3px 3px 0;
+			background-color: rgba(226, 68, 102, 0.8);
+			}
+
+			/* On hover, add a black background color with a little bit see-through */
+			.prev:hover, .next:hover {
+			background-color: rgba(0,0,0,0.8);
+			}
+
+			img {
+				vertical-align: middle;
+			}
+		
+			/* Slideshow container */
+			.slideshow-container {
+				max-width: 1000px;
+				position: relative;
+				margin: auto;
+			}
+		
+			/* Caption text */
+			.text {
+				color: #f2f2f2;
+				font-size: 15px;
+				padding: 8px 12px;
+				position: absolute;
+				bottom: 8px;
+				width: 100%;
+				text-align: center;
+			}
+		
+			/* Number text (1/3 etc) */
+			.numbertext {
+				color: #f2f2f2;
+				font-size: 12px;
+				padding: 8px 12px;
+				position: absolute;
+				top: 0;
+			}
+		
+			.active {
+				background-color: #717171;
+			}
+		
+			/* Fading animation */
+			.fade {
+				-webkit-animation-name: fade;
+				-webkit-animation-duration: 1.5s;
+				animation-name: fade;
+				animation-duration: 1.5s;
+			}
+		
+			@-webkit-keyframes fade {
+				from {
+					opacity: .4
+				}
+		
+				to {
+					opacity: 1
+				}
+			}
+		
+			@keyframes fade {
+				from {
+					opacity: .4
+				}
+		
+				to {
+					opacity: 1
+				}
+			}
+		
+			/* On smaller screens, decrease text size */
+			@media only screen and (max-width: 300px) {
+				.prev, .next,.text {
+					font-size: 11px
+				}
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<span class="logo"><img src="images/Memzyme_logo2.png" alt="" /></span>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li><a href="#intro" class="active">About</a></li>
+							<li><a href="#first">Team</a></li>
+							<li><a href="#second">Technology</a></li>
+							<li><a href="#cta">Contact</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Introduction -->
+							<section id="intro" class="main">
+								<div class="spotlight">
+									<div class="content">
+										<header class="major">
+											<h2>About Us</h2>
+										</header>
+										<p>We are first class researchers commercializing biomimetic </br>
+											membranes for gas capture and water filtration.</p>
+										<ul class="actions">
+											<li><a href="generic.html" class="button">Learn More</a></li>
+										</ul>
+									</div>
+									<div>
+										<img src="images/experimental_results.png" alt="R&D100 Gold Award Winner in Green Technology"/>
+										<p>R&D100 Gold Award Winner in Green Technology.</p>
+									</div>
+								</div>
+							</section>
+
+						<!-- First Section -->
+							<section id="first" class="main special">
+								<header class="major">
+									<h2>Meet the Team</h2>
+								</header>
+								<ul class="features">
+									<li>
+										<span><img src="images/slrempe.png" width="200" alt="Susan Rempe"></span>
+										<h3>Susan Rempe</h3>
+										<h4>CO Founder</h4>
+										<p>Distinguished Member of the Technical Staff at Sandia National Labs and graduate of the Energy I-Corps entrepeneurial training program, She is a Co-winner of 2015 R&D 100 Awards.</p>
+										<a href="images/CV_SBR_FINAL.pdf" class="button">Learn More</a>
+									</li>
+									<li>
+										<span><img src="images/ybjiang.png" alt="Ying Bing Jiang" width="200"></span>
+										<h3>Ying Bing Jiang</h3>
+										<h4>CO Founder</h4>
+										<p>Research faculty at the University of New Mexico and Co-Winner of 2011 and 2015 R&D 100 Awards.</p>
+										<a href="images/CV_YB_FINAL.pdf" class="button">Learn More</a>
+									</li>
+									<li>
+										<span class="icon major style5 fa-gem"></span>
+										<h3>Chris Beamis</h3>
+										<p></p>
+									</li>
+								</ul>
+							</section>
+
+							<section id="second" class="main special">
+
+								<h2>Technology</h2>
+
+								<div class="slideshow-container">
+
+									<div class="mySlides fade">
+										<div class="numbertext">1 / 20</div>
+										<img src="images/slides/slideTitle.jpg" style="width:100%">
+										<!-- <div class="text">Caption Text</div> -->
+									</div>
+
+									<div class="mySlides fade">
+										<div class="numbertext">2 / 20</div>
+										<img src="images/slides/acknowledgement.jpg" style="width:100%">
+										<!-- <div class="text">Caption Two</div> -->
+									</div>
+
+									<div class="mySlides fade">
+										<div class="numbertext">3 / 20</div>
+										<img src="images/slides/slideIntro.png" style="width:100%">
+										<!-- <div class="text">Caption Three</div> -->
+									</div>
+
+									<div class="mySlides fade">
+										<div class="numbertext">4 / 20</div>
+										<img src="images/slides/ImagineFuture.jpg" style="width:100%">
+										<!-- <div class="text">Caption Three</div> -->
+									</div>
+
+									<div class="mySlides fade">
+										<div class="numbertext">5 / 20</div>
+										<img src="images/slides/slide5.jpg" style="width:100%">
+										<!-- <div class="text">Caption Three</div> -->
+									</div>
+
+									<div class="mySlides fade">
+										<div class="numbertext">6 / 20</div>
+										<img src="images/slides/slide6.jpg" style="width:100%">
+										<!-- <div class="text">Caption Three</div> -->
+									</div>
+
+									<div class="mySlides fade">
+										<div class="numbertext">7 / 20</div>
+										<img src="images/slides/slide7.jpg" style="width:100%">
+										<!-- <div class="text">Caption Three</div> -->
+									</div>
+
+									<div class="mySlides fade">
+										<div class="numbertext">8 / 20</div>
+										<img src="images/slides/slide8.jpg" style="width:100%">
+										<!-- <div class="text">Caption Three</div> -->
+									</div>
+
+									<div class="mySlides fade">
+										<div class="numbertext">9 / 20</div>
+										<img src="images/slides/slide9.jpg" style="width:100%">
+										<!-- <div class="text">Caption Three</div> -->
+									</div>
+
+									<div class="mySlides fade">
+										<div class="numbertext">10 / 20</div>
+										<img src="images/slides/slide10.jpg" style="width:100%">
+										<!-- <div class="text">Caption Three</div> -->
+									</div>
+
+									<div class="mySlides fade">
+										<div class="numbertext">11 / 20</div>
+										<img src="images/slides/slide11.jpg" style="width:100%">
+										<!-- <div class="text">Caption Three</div> -->
+									</div>
+
+									<div class="mySlides fade">
+										<div class="numbertext">12 / 20</div>
+										<img src="images/slides/slide12.jpg" style="width:100%">
+										<!-- <div class="text">Caption Three</div> -->
+									</div>
+
+									<div class="mySlides fade">
+										<div class="numbertext">13 / 20</div>
+										<img src="images/slides/slide13.jpg" style="width:100%">
+										<!-- <div class="text">Caption Three</div> -->
+									</div>
+
+									<div class="mySlides fade">
+										<div class="numbertext">14 / 20</div>
+										<img src="images/slides/slide14.jpg" style="width:100%">
+										<!-- <div class="text">Caption Three</div> -->
+									</div>
+
+									<div class="mySlides fade">
+										<div class="numbertext">15 / 20</div>
+										<img src="images/slides/slide15.jpg" style="width:100%">
+										<!-- <div class="text">Caption Three</div> -->
+									</div>
+
+									<div class="mySlides fade">
+										<div class="numbertext">16 / 20</div>
+										<img src="images/slides/slide16.jpg" style="width:100%">
+										<!-- <div class="text">Caption Three</div> -->
+									</div>
+
+									<div class="mySlides fade">
+										<div class="numbertext">17 / 20</div>
+										<img src="images/slides/slide17.jpg" style="width:100%">
+										<!-- <div class="text">Caption Three</div> -->
+									</div>
+
+									<div class="mySlides fade">
+										<div class="numbertext">18 / 20</div>
+										<img src="images/slides/slide18.jpg" style="width:100%">
+										<!-- <div class="text">Caption Three</div> -->
+									</div>
+
+									<div class="mySlides fade">
+										<div class="numbertext">19 / 20</div>
+										<img src="images/slides/slide19.jpg" style="width:100%">
+										<!-- <div class="text">Caption Three</div> -->
+									</div>
+
+									<div class="mySlides fade">
+										<div class="numbertext">20 / 20</div>
+										<img src="images/slides/slide20.jpg" style="width:100%">
+										<!-- <div class="text">Caption Three</div> -->
+									</div>
+
+									<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+									<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+								</div>
+							</section>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<h2>Aliquam sed mauris</h2>
+							<p>Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat magna adipiscing tempus etiam dolore veroeros. eget dapibus mauris. Cras aliquet, nisl ut viverra sollicitudin, ligula erat egestas velit, vitae tincidunt odio.</p>
+							<ul class="actions">
+								<li><a href="generic.html" class="button">Learn More</a></li>
+							</ul>
+						</section>
+						<section>
+							<h2 id="cta">Contact Information</h2>
+							<dl class="alt">
+								<dt>Address</dt>
+								<dd>1234 Somewhere Road &bull; Nashville, TN 00000 &bull; USA</dd>
+								<dt>Phone</dt>
+								<dd>(000) 000-0000 x 0000</dd>
+								<dt>Email</dt>
+								<dd><a href="#">cpbeamis@memzyme.org</a></dd>
+							</dl>
+							<ul class="icons">
+								<li><a href="#" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
+								<li><a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+								<li><a href="#" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a></li>
+							</ul>
+						</section>
+						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script>
+				var slideIndex = 1;
+				showSlides(slideIndex);
+
+				// Next/previous controls
+				function plusSlides(n) {
+					showSlides(slideIndex += n);
+				}
+
+				// Thumbnail image controls
+				function currentSlide(n) {
+					showSlides(slideIndex = n);
+				}
+
+				function showSlides(n) {
+					var i;
+					var slides = document.getElementsByClassName("mySlides");
+					if (n > slides.length) { slideIndex = 1 }
+					if (n < 1) { slideIndex = slides.length }
+					for (i = 0; i < slides.length; i++) {
+						slides[i].style.display = "none";
+					}
+					slides[slideIndex - 1].style.display = "block";
+				}
+			</script>
+	</body>
+</html>
