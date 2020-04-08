@@ -3210,6 +3210,13 @@ input, select, textarea {
 		}
 
 /* Nav */
+	.headerLink {
+		text-decoration: none;
+		border-bottom: none;
+	}
+	.headerLink:focus {
+		background-color: transparent;
+	}
 
 	#nav {
 		-moz-transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;
@@ -3262,6 +3269,10 @@ input, select, textarea {
 			padding-top: 4.25em;
 		}
 
+		#nav div a div div {
+			visibility: hidden;
+		}
+
 		#nav ul {
 			margin: 0;
 			padding: 0;
@@ -3311,6 +3322,10 @@ input, select, textarea {
 			border-top-right-radius: 0;
 			z-index: 10000;
 		}
+
+			#nav.alt div a div div {
+				visibility: visible;
+			}
 
 			#nav.alt ul li {
 				margin: 0 0.175em;
